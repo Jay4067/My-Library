@@ -4,42 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#C5CAE9">
+    android:background="#C5CAE9"
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/txtMyLibrary"
+        android:id="@+id/myLibrarytxt"
+        android:text="My Libray"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="40dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:fontFamily="@font/alfa_slab_one"
-        android:text="My Library"
-        app:layout_constraintEnd_toEndOf="@+id/imageLogo"
-        app:layout_constraintStart_toStartOf="@+id/imageLogo"
-        app:layout_constraintTop_toBottomOf="@+id/imageLogo" />
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="142dp"
 
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
     <Button
         android:id="@+id/btnAllBook"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="80dp"
         android:text="See All Books"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="@+id/txtMyLibrary"
-        app:layout_constraintStart_toStartOf="@+id/txtMyLibrary"
-        app:layout_constraintTop_toBottomOf="@+id/txtMyLibrary" />
+        app:layout_constraintEnd_toEndOf="@+id/myLibrarytxt"
+        app:layout_constraintStart_toStartOf="@+id/myLibrarytxt"
+        app:layout_constraintTop_toBottomOf="@+id/myLibrarytxt" />
 
-    <ImageView
-        android:id="@+id/imageLogo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginStart="141dp"
-        android:layout_marginTop="70dp"
-        android:layout_marginEnd="142dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-       android:src="@mipmap/jp_logo" />
+
 
     <Button
         android:id="@+id/btnCurrentlyReadHome"
@@ -93,8 +88,8 @@
         android:layout_marginTop="15dp"
         android:text="About"
         android:textAllCaps="false"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnFavourites"
+        app:layout_constraintStart_toStartOf="@+id/btnFavourites"
         app:layout_constraintTop_toBottomOf="@+id/btnFavourites" />
 
     <TextView
@@ -106,5 +101,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
